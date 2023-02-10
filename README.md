@@ -8,8 +8,8 @@ This project was created on 21-Jan-2023 and this README file is created on 11-Fe
 Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
-This project is done using python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. 
+This project is done using python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington.
+This project can be used to find bike user by age and gender
 ### Files used
 chicago.csv
 washington.csv
