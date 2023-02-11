@@ -10,7 +10,7 @@ Created on Sat Jan 21 14:26:55 2023
 import time
 import pandas as pd
 import numpy as np
-
+#modify data location to run the code on your device 
 CITY_DATA = { 'Chicago': 'chicago.csv',
               'New York City': 'new_york_city.csv',
               'Washington': 'washington.csv' }
@@ -28,7 +28,7 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input(
-            '\nhich city would you like to see data for? (chicago, new york city, washington) ').lower()
+            '\nhich city would you like to see data for? (chicago, new york city, washington) ')
         if str(city).title() not in CITY_DATA.keys():
             print('\nSorry that\'s not a failed option, try again!\n')
             continue
@@ -128,7 +128,7 @@ def time_stats(df):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print('\nCalculating The Most Popular Stations and Trip.. .\n')
     start_time = time.time()
 
     # display most commonly used start station
@@ -235,7 +235,7 @@ def main():
        
         
         while True:
-          restart = input('\nWould you like to restart? Enter yes or no.\n')
+          restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
           if restart.lower() not in ('yes','no'):
               continue
           else:
