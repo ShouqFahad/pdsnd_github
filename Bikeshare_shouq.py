@@ -28,7 +28,7 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input(
-            '\nhich city would you like to see data for? (chicago, new york city, washington) ').lower()
+            '\nhich city would you like to see data for? (chicago, new york city, washington) ')
         if str(city).title() not in CITY_DATA.keys():
             print('\nSorry that\'s not a failed option, try again!\n')
             continue
